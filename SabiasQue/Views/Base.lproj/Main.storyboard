@@ -104,7 +104,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="¿Sabías qué?" id="zyd-Ry-2OB"/>
                     <connections>
-                        <segue destination="GUh-uL-Gwr" kind="show" id="RHJ-9f-FZk"/>
+                        <segue destination="GUh-uL-Gwr" kind="show" identifier="showFact" id="RHJ-9f-FZk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
