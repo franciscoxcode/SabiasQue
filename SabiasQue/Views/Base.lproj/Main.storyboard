@@ -42,6 +42,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Descubrir algo nuevo" buttonSize="large">
                                     <directionalEdgeInsets key="contentInsets" top="11" leading="17" bottom="11" trailing="17"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="newFactTapped:" destination="GUh-uL-Gwr" eventType="touchUpInside" id="Y6Z-E4-wQY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1AK-eX-Xcx"/>

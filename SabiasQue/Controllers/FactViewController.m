@@ -82,6 +82,14 @@
         default: [self.categoryLabel setTitle:@"" forState:UIControlStateNormal];
     }
     
+    [self showRandomFact];
+}
+
+- (IBAction)newFactTapped:(UIButton *)sender {
+    [self showRandomFact];
+}
+
+- (void)showRandomFact {
     NSArray *selectedFacts;
     switch (self.category) {
         case 0: selectedFacts = self.scienceFacts; break;
@@ -90,14 +98,22 @@
         default: selectedFacts = @[];
     }
     
-    self.lastIndex = -1;
-    if (selectedFacts.count > 0) {
-        NSInteger randomIndex = arc4random_uniform((u_int32_t)selectedFacts.count);
-        self.lastIndex = randomIndex;
-        self.factLabel.text = selectedFacts[randomIndex];
-    } else {
+    if (selectedFacts.count == 0) {
         self.factLabel.text = @"";
+        return;
     }
+    
+    NSInteger newIndex = 0;
+    if (selectedFacts.count == 1) {
+        newIndex = 0;
+    } else {
+        do {
+            newIndex = arc4random_uniform((u_int32_t)selectedFacts.count);
+        } while (newIndex == self.lastIndex);
+    }
+    
+    self.lastIndex = newIndex;
+    self.factLabel.text = selectedFacts[newIndex];
 }
 
 @end

@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *factLabel;
 @property (nonatomic, assign) NSInteger category;
 @property (weak, nonatomic) IBOutlet UIButton *categoryLabel;
+- (IBAction)newFactTapped:(UIButton *)sender;
 
 @end
 
