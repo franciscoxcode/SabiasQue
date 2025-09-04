@@ -49,6 +49,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ut4-xs-moo"/>
                     <connections>
+                        <outlet property="categoryLabel" destination="kdS-Dg-gsv" id="xXl-OT-vbQ"/>
                         <outlet property="factLabel" destination="qmB-En-8kh" id="e2o-IL-wwS"/>
                     </connections>
                 </viewController>

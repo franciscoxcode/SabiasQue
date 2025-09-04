@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface FactViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *factLabel;
 @property (nonatomic, assign) NSInteger category;
+@property (weak, nonatomic) IBOutlet UIButton *categoryLabel;
 
 @end
 
