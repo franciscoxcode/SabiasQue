@@ -10,6 +10,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface FactViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *factLabel;
 
 @end
 

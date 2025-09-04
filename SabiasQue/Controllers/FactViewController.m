@@ -15,7 +15,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.factLabel.text = @"¿Sabías que el corazón de una ballena azul puede pesar más de 180 kg?";
+
 }
 
 /*
